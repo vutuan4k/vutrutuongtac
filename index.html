@@ -97,7 +97,7 @@
         // CÔNG THỨC BÔNG HOA 3D MỚI
         function getFlowerPositions() {
             const points = new Float32Array(totalParticles * 3);
-            const petals = 6; // Số cánh hoa chính
+            const petals = 10; // Số cánh hoa chính
             
             for (let i = 0; i < totalParticles; i++) {
                 // R là tỷ lệ bán kính (từ 0 đến 1)
@@ -228,8 +228,8 @@
         const posSphere = getSpherePositions();
         const baseRingPos = getRingBasePositions();
         
-        const posTextILoveYou = getTextPositions("I LOVE YOU", 140, 0.025);
-        const posTextMaiTrang = getTextPositions("MAI TRANG", 140, 0.025); 
+        const posTextILoveYou = getTextPositions("I LOVE YOU", 150, 0.025);
+        const posTextMaiTrang = getTextPositions("MAI TRANG", 150, 0.025); 
         
         const posHeart = getHeartPositions();
         const posDissolve = getDissolvePositions();
